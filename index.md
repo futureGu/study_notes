@@ -8,4 +8,4 @@
 
 <h5>线程</h5>
 > 创建线程的方式及实现
-> sleep(),join(),yeild()区别
+> sleep,join,yeild区别
