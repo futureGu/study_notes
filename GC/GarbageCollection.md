@@ -31,7 +31,7 @@ For testing purposes, I’m using a laptop with a Core i7 processor. The sample 
 
 Steps #1 and 2: CLR suspends all managed threads:
 
-<img src="./resources/CLR_managed_thread.jpg"/>
+<img src="./resources/clr_managed_thread.jpg"/>
 
 Above, we see GC was triggered by thread 2948 and it waits for the CLR to suspend all managed threads. After that, the thread will collect the garbage and (as we will see in a moment) compact the heap. Note, heap compaction isn’t happening for every GC. The CLR tries to maximize GC performance and compacts the heap only when garbage/survivor ratio is high and compaction is useful.
 
